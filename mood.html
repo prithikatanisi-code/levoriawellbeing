@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Levoria — Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Levoria</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="mood.html">Mood</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="header">Mood Tracker</header>
+
+<main class="section">
+  <h2>How are you feeling now?</h2>
+  <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+    <button onclick="setMood('Happy 😊')">Happy</button>
+    <button onclick="setMood('Calm 🌿')">Calm</button>
+    <button onclick="setMood('Neutral 😐')">Neutral</button>
+    <button onclick="setMood('Sad 💧')">Sad</button>
+  </div>
+
+  <div style="margin-top:18px">
+    <h3>Current mood:</h3>
+    <p id="currentMood">No mood selected yet.</p>
+  </div>
+</main>
+
+<footer class="footer">© 2025 Levoria</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
