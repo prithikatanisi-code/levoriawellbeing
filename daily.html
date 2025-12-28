@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Ritual | Levoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-shapes">
+  <span></span><span></span><span></span>
+</div>
+
+<header>
+  <h1>Daily Rituals</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="journal.html">Unload</a>
+    <a href="mood.html">Mood Tracker</a>
+    <a href="archive.html">Archive</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="card">
+      <p>Welcome to your daily micro-rituals. Optional, gentle exercises for self-awareness.</p>
+    </div>
+
+    <div class="card">
+      <button onclick="generateDailyRitual()">New Ritual Prompt</button>
+      <p id="dailyPrompt" style="margin-top:10px; font-style: italic;"></p>
+    </div>
+
+  </div>
+</main>
+
+<script>
+const dailyRituals = [
+  "Notice one small thing you appreciated today.",
+  "Release one worry and let it fade.",
+  "Acknowledge one feeling without judging it.",
+  "Take three deep breaths, slowly.",
+  "Write one word describing your day."
+];
+
+function generateDailyRitual() {
+  const promptEl = document.getElementById("dailyPrompt");
+  const random = dailyRituals[Math.floor(Math.random() * dailyRituals.length)];
+  promptEl.innerText = random;
+}
+</script>
+
+</body>
+</html>
