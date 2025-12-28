@@ -4,120 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Levoria Wellbeing</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- BACKGROUND SHAPES -->
-<div class="background-shapes">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-<!-- HEADER -->
-<header>
-  <h1>Levoria doesn’t ask questions. It gives you space.</h1>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="journal.html">Unload</a>
-    <a href="mood.html">Mood Tracker</a>
-    <a href="archive.html">Archive</a>
-    <a href="daily.html">Daily Ritual</a>
-    <a href="gentle.html">Gentle</a>
-  </nav>
-</header>
-
-<!-- MAIN CONTENT -->
-<main>
-  <section class="daily-gentle">
-    <p id="dailyText">Loading today’s gentle thing...</p>
-  </section>
-  
-  <div class="container">
-
-    <div class="card">
-      <p>A quiet place to be, without judgment.</p>
-    </div>
-
-    <div class="card">
-      <p>Use Levoria to release your thoughts, track optional trends, or just exist without pressure.</p>
-    </div>
-
-    <div class="card">
-      <p>Click on "Unload" to write or release your thoughts anonymously, or explore your mood trends if you want.</p>
-    </div>
-
+  <!-- BACKGROUND SHAPES -->
+  <div class="background-shapes">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
-</main>
 
-<!-- FOOTER -->
-<footer>
-  © 2025 Levoria Wellbeing
-</footer>
-  /* ---------- GENTLE SPACE ---------- */
+  <!-- HEADER -->
+  <header>
+    <h1>Levoria doesn’t ask questions. It gives you space.</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="journal.html">Unload</a>
+      <a href="mood.html">Mood Tracker</a>
+      <a href="archive.html">Archive</a>
+      <a href="daily.html">Daily Ritual</a>
+      <a href="gentle.html">Gentle</a>
+    </nav>
+  </header>
 
-.gentle-container {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  <!-- MAIN -->
+  <main>
 
-.gentle-card {
-  max-width: 500px;
-  padding: 30px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.75);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  text-align: center;
-  animation: fadeIn 1.2s ease;
-}
+    <!-- DAILY GENTLE -->
+    <section class="daily-gentle">
+      <p id="dailyText">Loading today’s gentle thing...</p>
+    </section>
 
-.gentle-card p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
+    <!-- CONTENT -->
+    <div class="container">
+      <div class="card">
+        <p>A quiet place to be, without judgment.</p>
+      </div>
 
-.gentle-btn {
-  margin-top: 20px;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 20px;
-  background: #8fbfb5;
-  color: #fff;
-  cursor: pointer;
-}
+      <div class="card">
+        <p>Use Levoria to release your thoughts, track optional trends, or just exist without pressure.</p>
+      </div>
 
-.gentle-btn:hover {
-  opacity: 0.9;
-}
+      <div class="card">
+        <p>Click on “Unload” to write or release your thoughts anonymously, or explore your mood trends if you want.</p>
+      </div>
+    </div>
 
-/* ---------- DAILY GENTLE ---------- */
+  </main>
 
-.daily-gentle {
-  margin: 40px auto;
-  padding: 25px;
-  max-width: 500px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.6);
-  text-align: center;
-  font-style: italic;
-}
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Levoria Wellbeing
+  </footer>
 
-/* ---------- ANIMATIONS ---------- */
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-<script src="daily.js"></script>
-</body>
-</html>
-
-
+  <!-- JS -->
+  <script src="daily.js"></script>
 
 </body>
 </html>
+
