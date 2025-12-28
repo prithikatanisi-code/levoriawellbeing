@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unload | Levoria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-shapes">
+  <span></span><span></span><span></span>
+</div>
+
+<header>
+  <h1>Unload</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="journal.html">Unload</a>
+    <a href="mood.html">Mood Tracker</a>
+    <a href="archive.html">Archive</a>
+    <a href="daily.html">Daily Ritual</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- Release Entry -->
+    <div class="card">
+      <p>You don’t have to make sense here. Just write and let it go.</p>
+      <textarea id="journalEntry" rows="6" placeholder="Type whatever is on your mind..."></textarea>
+      <button onclick="releaseEntry()">Release (Vanish)</button>
+      <button onclick="saveJournal()">Save Entry (Optional)</button>
+    </div>
+
+    <!-- Optional Reflection Prompts -->
+    <div class="card">
+      <p>Optional Reflection Prompt:</p>
+      <p id="promptText"></p>
+      <button onclick="generatePrompt()">New Prompt</button>
+    </div>
+
+    <!-- End-of-Day Ritual -->
+    <div class="card">
+      <button onclick="closeDay()">Close the Day</button>
+    </div>
+
+    <!-- Previous Entries (Persistent) -->
+    <div class="card">
+      <h2>Previous Entries (Optional)</h2>
+      <div id="journalList"></div>
+    </div>
+
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
